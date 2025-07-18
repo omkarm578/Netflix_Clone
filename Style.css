@@ -1,0 +1,538 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    background-image: url(./Assets/header_bg.jpg);
+    height: 68.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section, header {
+    border-bottom: 7px solid #222222;
+}
+
+header .background-shadow {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+}
+
+nav {
+    padding: 1.5rem 15rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li .logo{
+    width: 14rem;
+}
+
+nav ul li .login-btn {
+    background-color: #e50913;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 0.37rem;
+    transition: 400ms;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul li .login-btn:hover {
+    background-color: #c50b14;
+    cursor: pointer;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+header .header-content h1 {
+    font-size: 4.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+header .header-content h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: white;
+    margin: 2rem 0;
+}
+
+header .header-content h4{
+    font-size: 1.46rem;
+    font-weight: normal;
+    color: white;
+}
+
+header .header-content .email-section {
+    margin: 2rem 0;
+    display: flex;
+    gap: 0.8rem;
+}
+
+header .header-content .email-section input {
+    background-color: #1f1919;
+    border: none;
+    color: lightgrey;
+    padding: 1.5rem;
+    width: 34rem;
+    outline: none;
+    border-radius: 0.45rem;
+}
+
+.get-started {
+    background-color: #e50913;
+    border: none;
+    color: white;
+    font-size: 2.35rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.45rem;
+    transition: 400ms;
+}
+
+.get-started i {
+    margin-left: 1rem;
+}
+
+.get-started:hover {
+    background-color: #c50b14;
+    cursor: pointer;
+}
+
+header .header-content .email-section input::placeholder {
+   color: lightgrey;
+}
+
+section {
+    padding: 10rem 15rem;
+}
+
+#watch-tv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#watch-tv .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#watch-tv .content-area h1 {
+    color: white;
+    font-size: 4.5rem; 
+}
+
+#watch-tv .content-area h3 {
+    color: white;
+    font-size: 1.7rem; 
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#watch-tv .screen-area img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#watch-tv .screen-area {
+    position: relative;
+}
+
+#watch-tv .video-area {
+    position: absolute;
+    top: 7rem;
+    left: 6rem;
+}
+
+#watch-tv .video-area video {
+    width: 85%;
+}
+
+#download-shows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#download-shows .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#download-shows .content-area h1 {
+    color: white;
+    font-size: 4.5rem; 
+}
+
+#download-shows .content-area h3 {
+    color: white;
+    font-size: 1.7rem; 
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#download-shows .screen-area .box-area {
+    position: absolute;
+    left: 6.9rem;
+    bottom: 0.1rem;
+    background-color: black;
+    border: 1.7px solid grey;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+#download-shows .screen-area .box-area img {
+    width: 4.8rem;
+}
+
+#download-shows .screen-area img {
+    width: 90%;
+}
+
+#download-shows .screen-area {
+    position: relative;
+}
+
+#download-shows .screen-area .box-area .text-area {
+   padding-left: 1.5rem;
+}
+
+#download-shows .screen-area .box-area .text-area h5{
+    color: white;
+    font-size: 1.45rem;
+}
+
+#download-shows .screen-area .box-area .text-area h6{
+    color: white;
+    font-size: 1.14rem;
+    color: #0071eb;
+    font-weight: normal;
+    margin-top: 0.3rem;
+}
+
+#download-shows .screen-area .box-area i {
+    color: #0071eb;
+    margin-left: auto;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+#watch-everywhere {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+}
+
+#watch-everywhere .content-area h1 {
+    color: white;
+    font-size: 4.5rem;
+}
+
+#watch-everywhere .content-area h3 {
+    color: white;
+    font-size: 1.7rem; 
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#kids-section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#kids-section .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#kids-section .content-area h1 {
+    color: white;
+    font-size: 4.3rem;
+}
+
+#kids-section .content-area h3 {
+    color: white;
+    font-size: 1.7rem; 
+    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+#kids-section .screen-area img {
+    width: 90%;
+}
+
+#faqs h1 {
+    font-size: 4.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#faqs .faq-area {
+    margin: 2.5rem 0;
+}
+
+#faqs .faq-area .faq {
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 2rem;
+    padding: 1.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+
+#faqs .faq-area .faq:hover {
+    background-color: #454545;
+    transform: translateX(22px);
+}
+
+#faqs .faq-area .faq h4 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#faqs .faq-area .faq i {
+    font-size: 3.5rem;
+}
+
+#faqs h4{
+    font-size: 1.46rem;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+#faqs .email-section {
+    margin: 2rem 0;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+#faqs .email-section input {
+    background-color: #1f1919;
+    border: none;
+    color: lightgrey;
+    padding: 1.5rem;
+    width: 34rem;
+    outline: none;
+    border-radius: 0.45rem;
+}
+
+#faqs h3 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.get-started {
+    background-color: #e50913;
+    border: none;
+    color: white;
+    font-size: 2.35rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.45rem;
+    transition: 400ms;
+}
+
+.get-started i {
+    margin-left: 1rem;
+}
+
+.get-started:hover {
+    background-color: #c50b14;
+    cursor: pointer;
+}
+
+#faqs .email-section input::placeholder {
+   color: lightgrey;
+}
+
+footer {
+    padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer h4 {
+    color: #ffffffb3;
+    font-size: 1.75rem;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer .footer-area {
+    display: grid;
+    gap: 15rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer-area .col {
+    margin-top: 1rem;
+}
+
+footer .footer-area .col ul li {
+    color: #ffffffb3;
+    text-decoration: underline;
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+footer .footer-area .col ul li:hover {
+    color: #e50913;
+}
+
+footer select {
+    color: #ffffffb3;
+    font-size: 1.4rem;
+    background-color: #1f1919;
+    padding: 0.8rem 2.25rem;
+    border-radius: 0.5rem;
+}
+
+footer .dropdown {
+    position: relative;
+}
+
+footer .dropdown img {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem;
+}
+
+footer p {
+    color: #ffffffb3;
+    font-size: 1.43rem;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    nav {
+        padding: 2rem 3rem;
+    }
+    
+    nav ul li .logo{
+        width: 15rem;
+    }
+    
+    header .header-content h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 540px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav ul li .logo{
+        width: 9.5rem;
+    }
+    
+    header .header-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .email-section input {
+        padding: 2rem;
+        height: 6.5rem;
+        width: 42rem;
+    }
+}
+
+@media (max-width: 539px) {
+    header {
+        height: 50rem;
+    }
+
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav ul li .logo{
+        width: 9.5rem;
+    }
+    
+    header .header-content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .email-section input {
+        padding: 2rem;
+        height: 6.5rem;
+        width: 42rem;
+    }
+
+    header .header-content {
+        padding: 0 4.5rem;
+    }
+
+    header .header-content h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    header .header-content h4 {
+        font-size: 1.44rem;
+        line-height: 2rem; 
+        text-align: center;
+    }
+
+    .email-section {
+        flex-direction: column;
+        align-items: center;
+        height: 1.5rem;
+        gap: 2rem;
+    }
+
+    .get-started {
+        padding: 1.1rem 0.9rem;
+    }
+}
