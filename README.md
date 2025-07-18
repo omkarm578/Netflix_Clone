@@ -20,3 +20,5 @@ A responsive front-end **Netflix homepage clone** built using **HTML**, **CSS**,
 - HTML5  
 - CSS3  
 - JavaScript (Vanilla JS)
+
+  ![Alt Image](https://github.com/omkarm578/Netflix_Clone/blob/61c979f4298cc597a13c4edee0be5c2bd43a32fe/Screenshot%202025-07-18%20152809.png)
